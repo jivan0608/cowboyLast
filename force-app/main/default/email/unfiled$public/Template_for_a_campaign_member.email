@@ -1,0 +1,5 @@
+Hi {!CampaignMember.FirstName}!
+We're glad to inform you that you're invited to our marketing campaign {!CampaignMember.Campaign}.
+Campaign details: Start date: {!CampaignMember.Start_date__c}.
+Type: {!CampaignMember.Type__c}.
+Description: {!CampaignMember.Description}.

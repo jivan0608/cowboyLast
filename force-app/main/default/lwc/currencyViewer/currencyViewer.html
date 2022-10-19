@@ -1,0 +1,17 @@
+<template>
+    
+    <lightning-card class="slds" title="Currencies Rate Viewer" icon-name="custom:custom17">
+      
+           <dl  class="slds-list_horizontal slds-wrap">
+            <dt class="slds-item_label slds-text-color_weak slds-truncate, slds-p-left_medium" title="USD">USD:</dt>
+            <dd id = "USDRate" class="slds-item_detail slds-truncate" title="USDRate" >{usdRate}</dd>
+            <dt class="slds-item_label slds-text-color_weak slds-truncate, slds-p-left_medium" title="EUR">EUR:</dt>
+            <dd class="slds-item_detail slds-truncate" title="EURRate">{eurRate}</dd>
+            <dt class="slds-item_label slds-text-color_weak slds-truncate, slds-p-left_medium" title="GBP">GBP:</dt>
+            <dd class="slds-item_detail slds-truncate" title="GBPRate">{gbpRate}</dd>
+          </dl>
+          <lightning-button class="slds-p-left_large" label="Refresh" id = "Refresh" onclick={refreshRates} slot="footer"></lightning-button>
+    </lightning-card>
+  
+  
+</template>
