@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="CSV to Leads converter">
+        <lightning-input type="file" label="Upload .csv file" onchange={processFile} slot="actions" accept=".csv"></lightning-input>
+            <p class="slds-p-horizontal_small">Upload .csv file to convert data to Leads</p>
+            <c-loaded-leads-table slot="footer" leads={leads}>
+            </c-loaded-leads-table>
+    </lightning-card>
+</template>
