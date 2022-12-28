@@ -20,9 +20,7 @@ public with sharing class CurrencyRateRecorderForLWC {
                                 HttpResponse res = h.send(req);
                           System.debug(res.toString());
                     return String.valueOf(res.getStatusCode());
-        }
-        
-        
+        }  
         @AuraEnabled(cacheable=false)
         public static Double getRate(String isoCode) {
             List<CurrencyType> rates = [
@@ -33,5 +31,4 @@ public with sharing class CurrencyRateRecorderForLWC {
             if(rates.size()<1) {return -1;}
             return rates[0].ConversionRate;
         }
-    
 }

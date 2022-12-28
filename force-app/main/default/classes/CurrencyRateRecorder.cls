@@ -20,7 +20,4 @@ public  class CurrencyRateRecorder {
               	System.debug(res.toString());
                 return String.valueOf(res.getStatusCode());
     }
-    
-   
-
 }
